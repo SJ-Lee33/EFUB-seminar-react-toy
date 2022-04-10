@@ -3,9 +3,12 @@ import PropTypes from "prop-types";
 
 class Movie extends Component {
     render() {
-        const { title, year } = this.props;
+        const { id, title, year, genres, summary, cover_img } = this.props;
+
         return (
-            <h3>Movie Title={title} Release Year = {yeear}</h3>
+            <div>
+                <h3>{title}hi</h3>
+            </div>
         );
     }
 }
