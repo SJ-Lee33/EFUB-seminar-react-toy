@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from "prop-types";
+
 class Movie extends Component {
     render() {
         const { title, year } = this.props;
@@ -7,4 +9,14 @@ class Movie extends Component {
         );
     }
 }
+
+Movie.propTypes = {
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    year: PropTypes.number.isRequired,
+    genres: PropTypes.array.isRequired,
+    summary: PropTypes.string.isRequired,
+    cover_img: PropTypes.string.isRequired
+}
+
 export default Movie;
