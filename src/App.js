@@ -41,7 +41,12 @@ class App extends Component {
               return (
                 <Movie
                   key={data.id}
-                  title={data.title} />
+                  id={data.id}
+                  title={data.title}
+                  year={data.year}
+                  genres={data.genres}
+                  summary={data.summary}
+                  cover_img={data.medium_cover_image} />
               );
             })}
           </div>

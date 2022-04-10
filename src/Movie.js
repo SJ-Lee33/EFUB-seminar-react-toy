@@ -7,7 +7,17 @@ class Movie extends Component {
 
         return (
             <div>
-                <h3>{title}hi</h3>
+                <img src={cover_img} alt={title} title={title} />
+                <div>
+                    <h3>{title}</h3>
+                    <h5>{year}</h5>
+                    <ul>
+                        {genres.map((genre, index) => (
+                            <li key={index}>{genre}</li>
+                        ))}
+                    </ul>
+                    <p>{summary.slice(0, 100)} ...</p>
+                </div>
             </div>
         );
     }
