@@ -8,8 +8,13 @@ class App extends Component {
   };
 
   getMovieData = async () => {
-    const movies = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating");
-    console.log(movies);
+    const {
+      data: {
+        data: {
+          movies
+        },
+      },
+    } = await axios.get("https://yts.mx/api/v2/list_movies.json?sort_by=rating");
   }
 
   async componentDidMount() {
