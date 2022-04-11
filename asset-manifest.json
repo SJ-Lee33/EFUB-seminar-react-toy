@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EFUB-seminar-react-toy/static/css/main.d51d8378.css",
+    "main.js": "/EFUB-seminar-react-toy/static/js/main.2c75ebae.js",
+    "index.html": "/EFUB-seminar-react-toy/index.html",
+    "main.d51d8378.css.map": "/EFUB-seminar-react-toy/static/css/main.d51d8378.css.map",
+    "main.2c75ebae.js.map": "/EFUB-seminar-react-toy/static/js/main.2c75ebae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d51d8378.css",
+    "static/js/main.2c75ebae.js"
+  ]
+}
